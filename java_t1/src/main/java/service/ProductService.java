@@ -21,6 +21,7 @@ public class ProductService {
     }
 
     public boolean validateProduct(String productName) {
+        int a = 1;
         if (productName == null || productName.trim().isEmpty()) {
             LoggerUtil.log("Invalid product.");
             return false;
