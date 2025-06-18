@@ -18,4 +18,13 @@ public class ProductService {
         LoggerUtil.log("Valid product.");
         return true;
     }
+
+    public boolean validateProduct(String productName) {
+        if (productName == null || productName.trim().isEmpty()) {
+            LoggerUtil.log("Invalid product.");
+            return false;
+        }
+        LoggerUtil.log("Valid product.");
+        return true;
+    }
 }
