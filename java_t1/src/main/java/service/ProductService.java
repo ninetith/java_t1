@@ -12,6 +12,7 @@ public class ProductService {
     // 克隆方法：与 validateProduct 非常相似
     public boolean isValidProduct(String productName) {
         int a = 1;
+        int b = 2;
         if (productName == null || productName.trim().isEmpty()) {
             LoggerUtil.log("Invalid product.");
             return false;
